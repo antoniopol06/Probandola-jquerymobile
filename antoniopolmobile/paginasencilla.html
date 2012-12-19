@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Creación de una página</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/mobile.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+<section data-role="page" id="paso1" data-title="Page paso1" data-theme='b'>
+	<header data-role="header">
+		<h1>Crear una página sencilla</h1>
+	</header>
+	<section data-role="content">
+		<p>
+			Es importante enlazar los siguientes archivos para que Jquery Mobile funcione: jquery.mobile-1.2.0.min.css, jquery-1.8.2.min.js y jquery.mobile-1.2.0.min.js. 
+		</p>
+		<p>
+		Todo lo que estas viendo esta metido en una <strong>section</strong> con un data-role="page". Es importante también darle una id, así podremos movernos por las diferentes páginas en un ejemplo posterior.
+		</p>
+		<p>
+			Jquery Mobile funciona gracias a los data- , recuérdalo, es muy importante.
+		</p>
+		<p>
+			<a href="#" data-role="button" data-rel="back" data-inline="true">Volver</a>
+			<a href="#paso2" data-role="button" data-transition="slide" data-inline="true">Avanzar</a>
+		</p>
+	</section>
+	<footer>
+		<h3>Amante de la Web</h3>
+	</footer>
+</section>
+<section data-role="page" id="paso2" data-title="Page paso2" data-theme='b'>
+	<header data-role="header">
+		<h1>Crear una página sencilla</h1>
+	</header>
+	<section data-role="content">
+		<p>
+		Dentro de la section que engloba todo, es necesario crear lo siguiente
+		</p>
+		<p>
+			<strong>Header</strong><br/>
+			Esta etiqueta debe tener el data-role='header' , en el podrás añadir por ejemplo, un h1 como el que tengo yo "Crear página sencilla"
+		</p>
+		<p>
+			<strong>Section</strong><br/>
+			Después del header, añadiremos un section con el data-role='content', aquí vendrá todo el contenido excepto el pie.
+		</p>
+		<p>
+			<strong>Footer</strong><br/>
+			Con la etiqueta footer pasa lo mismo, necesitamos añadirle un data-role="footer". Así conseguimos una página sencilla
+		</p>
+		<p>
+			<a href="#" data-role="button" data-rel="back" data-inline="true">Volver</a>
+			<a href="paginamultiple.html" data-role="button" data-transition="slide" data-inline="true">Avanzar</a>
+		</p>
+	</section>
+</section>
+	<footer>
+		<h3>Amante de la Web</h3>
+	</footer>
+</section>
+</body>
+</html>

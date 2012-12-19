@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Descubriendo Jquery</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/mobile.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+<section data-role="page" id="plegables" data-title="Page plegables" data-theme='b'>
+	<header data-role="header">
+		<h1>Cajas Plegables</h1>
+	</header>
+	<section data-role="content">
+		<section data-role="collapsible-set" class="ui-collapsible-set">
+			<section data-role="collapsible" class="ui-collapsible-set" data-collapsed="true">
+				<h3 class="ui-collapsible-heading">¿Contraido gracias a qué? Recuerda que esto tiene una clase ui-collapsible-heading</h3>
+				<p class="ui-collapsible-content">
+					Gracias a data-collapsed="true", ¿Cómo iba a ser si no?, para que entienda que esto esta contraido, a esta etiqueta p le hemos añadido la clase ui-collapsible-content
+				</p>
+			</section>
+			<section data-role="collapsible" class="ui-collapsible-set" data-collapsed="false">
+				<h3 class="ui-collapsible-heading">Y este por que no esta contraido</h3>
+				<p class="ui-collapsible-content">
+					Gracias a data-collapsed="false" nos permite mostrarlo directamente
+				</p>
+			</section>
+		</section>
+		<section>
+			¿Te has perdido ya? <a href="paginasencilla.html" data-transition="fade" data-prefetch>Empecemos de nuevo</a>
+		</section>
+	</section>
+	<footer>
+		<h3>Amante de la Web</h3>
+	</footer>
+</section>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Creación de una página múltiple</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+	<link rel="stylesheet" href="css/mobile.css" />
+	<script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+</head>
+<body>
+<section data-role="page" id="multiple1" data-title="Page multiple1" data-theme='b'>
+	<header data-role="header">
+		<h1>Páginas múltiples</h1>
+	</header>
+	<section data-role="content">
+		<p>
+			Como ya comentamos, si a tu section data-role="page" le distes un id="ejemplo" podremos navegar entre las diferentes pages del mismo HTML de la siguiente manera
+		</p>
+		<p>
+		Creando el anchor (etiqueta a) con el href="#ejemplo" y podemos añadirle un efecto de transiciones data-transition="fade", en nuestro ejemplo el valor de la transition es slide, ¿Te gusta? busca más transiciones como : slidefade, flow...
+		</p>
+		<p>
+			<a href="#" data-role="button" data-rel="back" data-inline="true">Volver</a>
+			<a href="temas.html" data-role="button" data-transition="slide" data-inline="true">Avanzar</a>
+		</p>
+	</section>
+	<footer>
+		<h3>Amante de la Web</h3>
+	</footer>
+</section>
+</body>
+</html>
